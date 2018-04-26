@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch --coverage",
-    "lint": "eslint **/*.js eslint **/*.json"
+    "lint": "eslint **/*.js eslint **/*.json",
+    "start-api": "node ./api-tests/server.js",
+    "test:api": "mocha ./api-tests/tests/api.spec.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,8 +25,11 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
+    "mocha": "^5.1.1",
     "prettier": "^1.12.1",
     "regenerator-runtime": "^0.11.1",
+    "should": "^13.2.1",
+    "supertest": "^3.0.0",
     "webpack": "^4.6.0",
     "yarn": "^1.6.0"
   },
@@ -37,5 +42,11 @@
     "other/coverage-example",
     "package.json",
     "package-lock.json"
-  ]
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chalk": "^2.4.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.16"
+  }
 }
