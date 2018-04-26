@@ -1,0 +1,41 @@
+{
+  "name": "test-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch --coverage",
+    "lint": "eslint **/*.js eslint **/*.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "prettier": "^1.12.1",
+    "regenerator-runtime": "^0.11.1",
+    "webpack": "^4.6.0",
+    "yarn": "^1.6.0"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "build",
+    "dist",
+    "coverage",
+    "workshop-setup.js",
+    "other/coverage-example",
+    "package.json",
+    "package-lock.json"
+  ]
+}
